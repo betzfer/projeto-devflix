@@ -1,7 +1,3 @@
-// para utilizar o componete, crie o import na página que deseja
-// coloque o nome da pessoa entre <footer>NomePessoa</footer>
-// passe a informação dentro da tag Footer - LINK
-// <Footer> link={}>Karol-ss</Footer>
 import SocialLinks from "../socialLinks/socialLinks";
 import "./footer.module.css";
 import "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js";
@@ -11,11 +7,11 @@ const Footer = ({ children, link }) => {
     <footer>
       <p>
         Feito com <ion-icon name="heart" /> por{" "}
-        <a href={link} target="_blank" rel="noopener noreferrer">
+        <a href={link} target="#" rel="noopener noreferrer">
           {children}
         </a>
         </p>
-        <SocialLinks icon={"logo-github"} href={"#"} />
+        <SocialLinks icon={"logo-github"} href={link} />
       
     </footer>
   );
