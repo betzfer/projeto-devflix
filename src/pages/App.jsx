@@ -3,9 +3,9 @@ import { useState } from "react";
 
 import searchIcon from "../assets/search.svg";
 
+import "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js";
 import "./App.css";
 import MovieCard from "../componentes/movieCard/movieCard";
-import Footer from "../componentes/footer/footer";
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -32,19 +32,22 @@ const App = () => {
   return (
     <div id="app">
       <div className="logo">DEVFLIX</div>
+
       <div className="search">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="90"
-        height="90"
-        viewBox="0 0 90 90"
-        fill="none"
-      >
-        <path
-          d="M15 22.5H75V30H15V22.5ZM15 41.25H75V48.75H15V41.25ZM75 60H15V67.5H75V60Z"
-          fill="white"
-        />
-      </svg>
+        <svg className="barrinha"
+          xmlns="http://www.w3.org/2000/svg"
+          width="90"
+          height="90"
+          viewBox="0 0 90 90"
+          fill="none"
+          placeholder="barrinhas"
+          onClick={() => tags()}
+        >
+          <path
+            d="M15 22.5H75V30H15V22.5ZM15 41.25H75V48.75H15V41.25ZM75 60H15V67.5H75V60Z"
+            fill="white"
+          />
+        </svg>
         <input
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
@@ -68,7 +71,6 @@ const App = () => {
           <h2>Nenhum filme encontrado 😏</h2>
         </div>
       )}
-      <Footer link={"https://github.com"}>Betzfer</Footer>
     </div>
   );
 };

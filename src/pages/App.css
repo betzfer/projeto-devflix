@@ -77,28 +77,6 @@ body {
   flex-wrap: wrap;
 }
 
-._movie_synsi_1 {
-  width: 18.8rem;
-  height: 34.7rem;
-  margin: 1.5rem;
-  position: relative;
-  border: black;
-  box-shadow: -1px 7px 10px 6px rgba(0, 0, 0, 0.4);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border-radius: 0rem 0rem 3rem 3rem;
-}
-
-._movie_synsi_1 div:nth-of-type(3) {
-  z-index: 2;
-  background: #343333;
-  position: absolute;
-  bottom: 28px;
-  left: 0;
-  right: 0;
-  padding: 13px 30px 7px;
-  border-radius: 0rem 0rem 4rem 4rem;
-}
-
 @media screen and (max-width: 600px) {
   .app {
     padding: 4rem 2rem;
